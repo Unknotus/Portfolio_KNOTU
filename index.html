@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KNOTU — Frontend Developer. Creating modern interfaces with clean code and motion.">
+  <title>KNOTU — Portfolio</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="../photo_Project/svg-icon/1.png" type="image/svg+xml" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="JavaScript/js2.js" defer></script>
+
+</head>
+<!--  ---------------------PROVERIT POTOM -----------------  -->
+<!-- <div class="video-modal" id="videoModal">
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal-content">
+    <button class="modal-close" id="modalClose">✕</button>
+    <video id="modalVideo" controls></video>
+  </div>
+</div> -->
+<!-- ---------------------PROVERIT POTOM -----------------  -->
+
+<body>
+
+  <!-- ═══════ HEADER ═══════ -->
+  <header class="header" id="header">
+    <a href="#" class="logo">KNOTU</a>
+    <nav>
+      <ul class="nav" id="nav">
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#skills">Вознеможности</a></li>
+        <li><a href="#contact" class="nav-cta">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!----- HERO ----->
+  <section class="hero">
+    <div class="hero-ghost" aria-hidden="true">KNOTU</div>
+
+    <p class="hero-label">Frontend разработчик — Готов к работе(нянят)</p>
+
+    <h1 class="hero-name">
+      Hello,<br>I'm <em>UNKO</em>
+    </h1>
+
+    <p class="hero-role">Frontend Developer</p>
+
+    <p class="hero-sub">
+      Создание современных интерфейсов<br>
+      с чистым кодом и анимацией.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projects" class="btn-primary">
+        Глянь что сделал
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" /> <!-- стрелочка -->
+        </svg>
+      </a>
+      <a href="#contact" class="btn-ghost">
+        откликнуться
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+          <path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span>прокрутка</span>
+    </div>
+  </section>
+
+  <!---------------О СЕБЕ ------------>
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-left reveal">
+        <div class="about-big" aria-hidden="true">ОБО МНЕ</div>
+        <!-- Тут будет лого с анимацией  -->
+        <div class="about-img-wrap">
+          <img src="photo_Project/svg-icon/finalLogo.png" alt="Igor Prasolov">
+        </div>
+      </div>
+
+      <div class="about-right">
+        <p class="section-label reveal">01 — Кто я </p>
+        <h2 class="section-title reveal reveal-delay-1">
+          Игорь<br>Прасолов
+        </h2>
+        <p class="about-desc reveal reveal-delay-2">
+          Фронтенд-разработчик, специализирующийся на <strong>чистом пользовательском интерфейсе,
+            взаимодействии</strong> и современных веб-технологиях.
+          Мой основной стек технологий — <strong>HTML5, CSS3 (Flexbox / Grid)</strong> и современный JavaScript.
+          <br><br>
+          Моя цель — стать сильным разработчиком среднего уровня<strong><br>(А может и лучше)</strong>,
+          создающим продукты, которые действительно помогают людям.
+          Всегда открыт для новых вызовов.
+        </p>
+
+        <div class="about-stats reveal reveal-delay-3">
+          <div class="stat">
+            <div class="stat-num">1.5 <span>+</span></div>
+            <div class="stat-label">Стаж работы</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">10<span>+</span></div>
+            <div class="stat-label">Сделано проектов</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Желания
+              <span class="small_comment">(погоди-погоди)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-v2 reveal reveal-delay-4">
+          <p class="timeline-v2-title">Обучение</p>
+          <div class="tl-item">
+            <span class="tl-date">2021 – 2025</span>
+            <div>
+              <div class="tl-desc">СПО ОГУ имени И.С Тургенева</div>
+              <div class="tl-sub">Среднее профессиональное образование города Орла</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-date">2023 – 2024</span>
+            <div>
+              <div class="tl-desc">Курсы, вебинары, интенсивы</div>
+              <div class="tl-sub">Айтилогия и другие</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <span class="tl-date">2025 – сегодня</span>
+            <div>
+              <div class="tl-desc">Университет ОГУ имени И.С Тургенева <strong>ИПАИТ</strong> </div>
+              <div class="tl-sub">Институт Приборостроения и Автоматизации Систем</div>
+              <span class="small_comment">(Высшее образование города Орла)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="certs reveal">
+          <p class="certs-title">Сертификаты, грамоты и т.д.</p>
+          <div class="certs-grid">
+            <div class="cert-card">
+              <img src="certificate/Сертификат.jpeg" alt="Certificate — Айтилогия">
+            </div>
+            <div class="cert-card">
+              <img
+                src="certificate/Прасолов_НН2026_Научная Россия_Диплом_PNG/Прасолов_НН2026_Научная Россия_Диплом_1.png"
+                alt="Certificate — Английский">
+            </div>
+            <div class="cert-card">
+              <img src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --- Проекты --- -->
+  <section class="projects" id="projects">
+    <div class="projects-header">
+      <div>
+        <p class="section-label reveal">02 — Наработки <span class="slash_wrapp" id="slashWrap"><span
+              class="blink">\</span></span> Работа</p>
+        <h2 class="section-title reveal reveal-delay-1">Выполненные<br>Проекты</h2>
+      </div>
+      <p style="font-size:0.82rem;color:var(--muted);max-width:200px;text-align:right;line-height:1.6;"
+        class="reveal reveal-delay-2">
+        Наведите курсор для предварительного просмотра <br> Тапни, чтоюы изучить
+      </p>
+    </div>
+
+    <div class="projects-list reveal">
+
+      <!----------- 1 ПРОЕКТ --------------->
+      <a href="project/project1.html" class="project-row">
+        <span class="proj-num">01</span>
+        <div class="proj-info">
+          <div class="proj-title">Anime Edits(Эдиты)</div>
+          <div class="proj-tags">
+            <span class="tag">After Effects</span>
+            <span class="tag">Davinchi Resolve</span>
+            <span class="tag">Photoshop</span>
+            <span class="tag">Plugins</span>
+
+          </div>
+        </div>
+        <span class="proj-year">2023-2026</span>
+        <span class="proj-arrow">↗</span>
+
+        <div class="proj-cover">
+          <video src="video/AnimeEdit.mp4" loop muted playsinline
+            poster="photo_Project/превью для anime edits.png"></video>
+        </div>
+
+        <div class="proj-thumb">
+          <div class="proj-thumb-media">
+            <video src="video/AnimeEdit.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="proj-thumb-info">
+            <div class="proj-thumb-name">Anime Edits</div>
+            <div class="proj-thumb-tags">
+              <span class="proj-thumb-tag">Узнать больше</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!------------ 2 ПРОЕКТ ----------------->
+      <a href="project/project2.html" class="project-row">
+        <span class="proj-num">02</span>
+        <div class="proj-info">
+          <div class="proj-title">Видеомонтаж</div>
+          <div class="proj-tags">
+            <span class="tag">After Effects</span>
+            <span class="tag">Premiere</span>
+            <span class="tag">Davinchi resolve</span>
+            <span class="tag">Photoshop</span>
+          </div>
+        </div>
+        <span class="proj-year">2023-2025</span>
+        <span class="proj-arrow">↗</span>
+
+        <div class="proj-cover">
+          <video src="video/EDIT.mp4" loop muted playsinline poster="photo_Project/photo_videoMont.png"></video>
+        </div>
+
+
+
+
+
+
+        <div class="proj-thumb">
+          <div class="proj-thumb-media">
+            <!-- Также сделать превью -->
+            <video src="video/EDIT.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="proj-thumb-info">
+            <div class="proj-thumb-name">Видеомонтаж</div>
+            <div class="proj-thumb-tags">
+              <span class="proj-thumb-tag">Узнать больше</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!----------- 3 ПРОЕКТ --------------->
+      <a href="project/project3.html" class="project-row">
+        <span class="proj-num">03</span>
+        <div class="proj-info">
+          <!-- Поработать со словом фриланс -->
+          <div class="proj-title">Фриланс</div>
+          <div class="proj-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Lending</span>
+            <span class="tag">Figma</span>
+            <span class="tag">CodePen</span>
+            <span class="tag">-</span>
+          </div>
+        </div>
+        <span class="proj-year">2024-2026</span>
+        <span class="proj-arrow">↗</span>
+
+        <div class="proj-cover">
+          <video src="video/AnimeEdit.mp4" loop muted playsinline poster="photo_Project/photo_Free.png"></video>
+        </div>
+
+
+
+
+
+
+        <div class="proj-thumb">
+          <div class="proj-thumb-media">
+            <video src="video/AnimeEdit.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="proj-thumb-info">
+            <div class="proj-thumb-name">ФРИЛАНС</div>
+            <div class="proj-thumb-tags">
+              <span class="proj-thumb-tag">Узнать больше</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!---------- 4 ПРОЕКТ —------- -->
+      <a href="project/project4.html" class="project-row">
+        <span class="proj-num">04</span>
+        <div class="proj-info">
+          <div class="proj-title">Учеба</div>
+          <div class="proj-tags">
+            <span class="tag">Linux</span>
+            <span class="tag">C++</span>
+            <span class="tag">Virtual Box</span>
+            <span class="tag">Assembler</span>
+            <span class="tag">Git</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Figma</span>
+            <span class="tag">E.T.C</span>
+          </div>
+        </div>
+        <span class="proj-year">2025 - по данное время</span>
+        <span class="proj-arrow">↗</span>
+
+                <div class="proj-cover">
+          <video src="video/AnimeEdit.mp4" loop muted playsinline poster="photo_Project/studyPhoto.png"></video>
+        </div>
+
+
+        <div class="proj-thumb">
+ <div class="proj-thumb-media">
+            <video src="video/AnimeEdit.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="proj-thumb-info">
+            <div class="proj-thumb-name">ФРИЛАНС</div>
+            <div class="proj-thumb-tags">
+              <span class="proj-thumb-tag">Узнать больше</span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ---------- Умения и навыки -------->
+  <section class="skills" id="skills">
+    <p class="section-label reveal">03 — Вознеможности</p>
+    <h2 class="section-title reveal reveal-delay-1">Умения &amp;<br>Навыки</h2>
+
+    <div class="skills-inner">
+      <div class="reveal reveal-delay-2">
+        <p class="skills-group-title">Проф. навыки</p>
+
+        <div class="skill-bar">
+          <div class="skill-bar-header">
+            <span class="skill-name">HTML5 / Semantics</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="90"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-bar-header">
+            <span class="skill-name">CSS3 / Flexbox / Grid</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="88"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-bar-header">
+            <span class="skill-name">JavaScript (ES6+)</span>
+            <span class="skill-pct">72%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="72"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-bar-header">
+            <span class="skill-name">After Effects / Motion</span>
+            <span class="skill-pct">80%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="80"></div>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="skill-bar-header">
+            <span class="skill-name">Responsive Design</span>
+            <span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-track">
+            <div class="skill-fill" data-width="85"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-3">
+        <p class="skills-group-title">Tools I use</p>
+        <div class="tools-grid">
+          <span class="tool-chip">VS Code</span>
+          <span class="tool-chip">Git / GitHub</span>
+          <span class="tool-chip">Figma</span>
+          <span class="tool-chip">Webpack</span>
+          <span class="tool-chip">npm</span>
+          <span class="tool-chip">After Effects</span>
+          <span class="tool-chip">Premiere Pro</span>
+          <span class="tool-chip">Chrome DevTools</span>
+          <span class="tool-chip">Notion</span>
+          <span class="tool-chip">Word</span>
+          <span class="tool-chip">Excel</span>
+          <span class="tool-chip">Virtual Box</span>
+          <span class="tool-chip">Assembler</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-------------- Контакты ---------->
+  <section class="contact" id="contact">
+    <div class="contact-ghost" aria-hidden="true">HI</div>
+
+    <div class="contact-inner">
+      <p class="section-label reveal">04 — Контакты</p>
+      <h2 class="contact-big reveal reveal-delay-1 visible">
+        Давайте<br><em>поможем</em><br>друг другу
+      </h2>
+      <p class="contact-text reveal reveal-delay-2">
+        Открыт для совместных проектов и работ <br>
+        Буду работать сообща ради общей цели
+      </p>
+
+      <form class="cform reveal reveal-delay-3" id="contactForm">
+        <div class="cform-row">
+          <div class="cfield">
+            <input type="text" placeholder="Имя" name="name" required>
+          </div>
+          <div class="cfield">
+            <input type="email" placeholder="Почта" name="Email" required>
+          </div>
+        </div>
+        <div class="cfield">
+          <textarea placeholder="Тапай, если надумал" name="message" required></textarea>
+        </div>
+        <button type="submit" class="cform-submit">
+          Отправить сообщение
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </button>
+      </form>
+
+      <div class="socials reveal reveal-delay-4">
+        <a href="tel:+79155073356" class="social-link">
+          <span class="arrow">→</span>
+          Phone
+          <span style="margin-left:auto;font-size:0.7rem;letter-spacing:0.06em;color:var(--muted)">+7 915 507 33
+            56</span>
+        </a>
+        <a href="mailto:iprasolov060@gmail.com" class="social-link">
+          <span class="arrow">→</span>
+          Email
+          <span
+            style="margin-left:auto;font-size:0.7rem;letter-spacing:0.06em;color:var(--muted)">iprasolov060@gmail.com</span>
+        </a>
+        <a href="https://t.me/Unko_F" target="_blank" rel="noopener" class="social-link">
+          <span class="arrow">→</span>
+          Telegram
+          <span style="margin-left:auto;font-size:0.7rem;letter-spacing:0.06em;color:var(--muted)">@Unko_F</span>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener" class="social-link">
+          <span class="arrow">→</span>
+          GitHub
+          <span style="margin-left:auto;font-size: 0.7rem;letter-spacing: 0.;">UNKO</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER BAR ═══════ -->
+  <footer class="footer-bar">
+    <p class="footer-copy">&copy; <span id="year"></span> KNOTU. All rights reserved.</p>
+    <p class="footer-made">Built with <span>care</span> and <span>love</span> — Prasolov Igor</p>
+  </footer>
+
+
+</body>
+
+</html>

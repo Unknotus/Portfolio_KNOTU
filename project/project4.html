@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="KNOTU — Учёба. Учебные проекты, C++, веб.">
+    <title>KNOTU — Учёба</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../styleForProject/styleForStudy.css">
+    <link rel="stylesheet" href="../styleForProject/AnimeStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="JSForProject/Project4.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ── КНОПКА НАЗАД ── -->
+    <a href="html2.html" class="anime-back">
+        <span class="anime-back-label">SYSTEM</span>
+        <div class="anime-back-row">
+            <span class="anime-back-arrow">◄</span>
+            <span class="anime-back-text">BACK TO PORTFOLIO</span>
+        </div>
+    </a>
+
+    <!-- ── HEADER ── -->
+    <header class="header1" id="header1">
+        <a href="#" class="logo">STUDY</a>
+        <nav>
+            <ul class="navAnime" id="navAnime">
+                <li><a href="#about">О разделе</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#stack">Стек</a></li>
+                <li><a href="contact" class="nav-cta">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span>
+        </button>
+    </header>
+
+    <!-- ── HERO ── -->
+    <section class="hero">
+        <div class="hero-ghost" aria-hidden="true">LEARN</div>
+        <p class="hero-label">Университет · ИПАИТ · 2025 — сейчас</p>
+        <h1 class="hero-name">
+            This is <br><em>STUDY</em>
+        </h1>
+        <p class="hero-sub">
+            Учебные проекты, лабораторные работы<br>
+            и всё что сделано в процессе обучения.
+        </p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+                Проекты
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+            <a href="#stack" class="btn-ghost">
+                Стек
+                <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+                    <path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- ── О РАЗДЕЛЕ ── -->
+    <section class="what" id="about">
+        <div class="what-inner">
+            <div>
+                <p class="section-label">01 — Контекст</p>
+                <h2 class="what-big">УЧЁБА —<br>ЭТО БАЗА</h2>
+                <p class="what-text">
+                    Здесь собраны проекты, которые появились в процессе учёбы в ИПАИТ.
+                    Лабораторные, курсовые, самостоятельные эксперименты.<br><br>
+                    <strong>Что внутри:</strong><br>
+                    Веб-проекты по специальности, приложения на C++,
+                    работа с Linux, Git и всё остальное что входит в программу —
+                    и немного сверх неё.
+                </p>
+            </div>
+
+
+            <div class="what-image-wrapper">
+                <div class="image-overlay"></div>
+                <img src="../photo_Project/Снимок экрана 2026-06-09 в 11.34.34.png" alt="Study project" class="what-img"
+                    style="width:100%; height: 1210px; object-fit:cover; border-radius: 0 0 12px 12px;">
+
+                <div class="image-corner-text">IPAIT // 2025</div>
+            </div>
+        </div>
+    </section>
+<!-- ----------- ПРОЕКТЫ --------------- -->
+    <section class="study-projects" id="projects">
+        <div class="study-projects-header">
+            <p class="section-label">02 — Проекты</p>
+            <h2 class="section-title">Учебные<br>работы</h2>
+        </div>
+    
+        <div class="study-list">
+    
+    
+            <div class="study-card" id="project-svodoki">
+    
+                <div class="study-card-head">
+                    <div class="study-card-meta">
+                        <span class="study-card-num">01</span>
+                        <span class="study-card-type study-card-type--web">Web</span>
+                    </div>
+                    <div class="study-card-status study-card-status--done">Готов</div>
+                </div>
+    
+                <h3 class="study-card-title">СВО Доки</h3>
+                <p class="study-card-desc">
+                    Справочный сайт льгот и документов для участников СВО в Орле. Пошаговые инструкции, без регистрации.
+                </p>
+    
+                <div class="study-card-tags">
+                    <span class="tag">HTML5</span>
+                    <span class="tag">CSS3</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Figma</span>
+                    <span class="tag">Учебный проект</span>
+                </div>
+    
+
+                <div class="study-card-preview">
+                    <div class="study-card-preview-bar">
+                        <span class="preview-dot"></span>
+                        <span class="preview-dot"></span>
+                        <span class="preview-dot"></span>
+                        <span class="preview-url">svo-docs.ru</span>
+                    </div>
+                    <div class="iframe-placeholder">
+                        <span class="iframe-placeholder-icon">⬡</span>
+                        <span>В разработке</span>
+                    </div>
+                </div>
+                <div class="study-card-footer">
+
+                    <a href="ССЫЛКА_НА_GITHUB" target="_blank" class="study-link">
+                        <span class="arrow">→</span> GitHub
+                    </a>
+
+
+                    <a href="ССЫЛКА_НА_ЖИВОЙ_САЙТ" target="_blank" class="study-link">
+                        <span class="arrow">→</span> Live Site
+                    </a>
+                </div>
+    
+            </div>
+    
+
+            <!-- ---------------2 ПРОЕКТ ------------------------ -->
+            <div class="study-card study-card--soon" id="project-todo">
+    
+                <div class="study-card-head">
+                    <div class="study-card-meta">
+                        <span class="study-card-num">02</span>
+                        <span class="study-card-type study-card-type--cpp">C++ / QT</span>
+                    </div>
+                    <div class="study-card-status study-card-status--done">ГОТОВ</div>
+                </div>
+    
+                <h3 class="study-card-title">DASHBOARD</h3>
+                <p class="study-card-desc">
+                    приложение на C++.
+                    Приложение создано с целью управление и быстрого доступа ко всему необходимому.
+                </p>
+    
+                <div class="study-card-tags">
+                    <span class="tag">C++</span>
+                    <span class="tag">Qt6</span>
+                    <span class="tag">OOP</span>
+                    <span class="tag">CMake</span>
+                    <span class="tag">GUI</span>
+                </div>
+    
+
+                <div class="study-card-preview study-card-preview--terminal">
+                    <div class="study-card-preview-bar">
+                        <span class="preview-dot"></span>
+                        <span class="preview-dot"></span>
+                        <span class="preview-dot"></span>
+                        <span class="preview-url">QT - DASHBOARD OOP</span>
+                    </div>
+                        <img src="../photo_Project/Снимок экрана 2026-06-10 в 01.36.17.png" class="study-card-iframe" alt="Dashboard preview"
+                            style="width:1400px; height: 730px; object-fit:cover; border-radius: 0 0 12px 12px;">
+                </div>
+    
+                <div class="study-card-footer">
+
+                    <a href="ССЫЛКА_НА_GITHUB_CPP" target="_blank" class="study-link study-link--disabled">
+                        <span class="arrow">→</span> GitHub 
+                    </a>
+                </div>
+    
+            </div>
+    
+    
+        </div>
+    </section>
+
+    <!-- ── СТЕК ── -->
+    <section class="stack-section" id="stack">
+        <p class="section-label">03 — Инструменты</p>
+        <h2 class="what-big" style="margin-bottom: 56px;">ЧЕМ<br>РАБОТАЮ</h2>
+
+        <div class="stack-grid">
+
+            <div class="stack-card">
+                <span class="stack-num">01</span>
+                <div class="stack-name">HTML / CSS / JS</div>
+                <div class="stack-desc">Веб-проекты, лендинги, интерфейсы. Семантика, адаптив, анимации.</div>
+                <div class="stack-tag">Web</div>
+            </div>
+
+            <div class="stack-card">
+                <span class="stack-num">02</span>
+                <div class="stack-name">C++</div>
+                <div class="stack-desc">ООП, работа с файлами, консольные приложения. По программе ИПАИТ.</div>
+                <div class="stack-tag">System</div>
+            </div>
+
+            <div class="stack-card">
+                <span class="stack-num">03</span>
+                <div class="stack-name">Git / GitHub</div>
+                <div class="stack-desc">Версионирование всех учебных проектов. Коммиты, ветки, README.</div>
+                <div class="stack-tag">Контроль</div>
+            </div>
+
+            <div class="stack-card">
+                <span class="stack-num">04</span>
+                <div class="stack-name">Linux / VirtualBox</div>
+                <div class="stack-desc">Работа в терминале, базовые команды, настройка окружения.</div>
+                <div class="stack-tag">OS</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer-bar">
+        <p class="footer-copy">&copy; <span id="year"></span> KNOTU. All rights reserved.</p>
+        <p class="footer-made">Built with <span>care</span> and <span>love</span> — Prasolov Igor</p>
+    </footer>
+
+</body>
+
+</html>

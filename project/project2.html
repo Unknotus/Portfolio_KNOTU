@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KNOTU — Видеомонтаж. Коммерческие ролики, клипы, рилсы.">
+  <title>KNOTU — Видеомонтаж</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../styleForProject/styleForVideo.css">
+  <link rel="stylesheet" href="../styleForProject/AnimeStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="../photo_Project/svg-icon/1.png" type="image/svg+xml" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="JSForProject/Project2.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ── КНОПКА НАЗАД ── -->
+  <a href="html2.html" class="anime-back">
+    <span class="anime-back-label">SYSTEM</span>
+    <div class="anime-back-row">
+      <span class="anime-back-arrow">◄</span>
+      <span class="anime-back-text">BACK TO PORTFOLIO</span>
+    </div>
+  </a>
+
+  <!-- ── HEADER ── -->
+  <header class="header1" id="header1">
+    <a href="#" class="logo">VIDEO EDIT</a>
+    <nav>
+      <ul class="navAnime" id="navAnime">
+        <li><a href="#about">О Проекте</a></li>
+        <li><a href="#VProjects">Работы</a></li>
+        <li><a href="#stack">Инструменты</a></li>
+        <li><a href="contact" class="nav-cta">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero" reveal>
+    <div class="hero-ghost" aria-hidden="true">VIDEO</div>
+    <p class="hero-label">Коммерческий монтаж</p>
+    <h1 class="hero-name">
+      This is <br><em>EDIT</em>
+    </h1>
+    <p class="hero-sub">Рилсы, клипы, коммерческие ролики и всё, что режется на таймлайне</p>
+    <div class="hero-actions">
+      <a href="#VProjects" class="btn-primary">
+        Работы
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+      <a href="#stack" class="btn-ghost">
+        Стек
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+          <path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" stroke-width="1.4"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- -------ПРОЕКТЫ------------ -->
+<section class="project1" id="VProjects">
+  <div class="project-header">
+    <p class="section-label-AnimeInd">РАБОТЫ</p>
+  </div>
+
+  <div class="video-prosm">
+    <!-- Ambient glow -->
+    <div class="AmbientBackg">
+      <video src="../video/VideoMont/EDIT.mp4" id="ambient-video" loop muted playsinline aria-hidden="true"></video>
+    </div>
+
+    <!-- Главный плеер -->
+    <main class="main-play-obertka">
+      <video id="main-player" controls preload="none" poster="../photo_Project/photo_videoMont.png">
+        <source src="../video/VideoMont/EDIT.mp4" type="video/mp4">
+      </video>
+    </main>
+
+    <!-- Описание -->
+    <div class="video-description" id="videoDescription">
+      <div class="vd-top">
+        <div class="vd-left">
+          <span id="vd-genre">Коммерческий · Реклама</span>
+          <h3 id="vd-title">Коммерческий ролик</h3>
+        </div>
+        <span id="vd-year">2024</span>
+      </div>
+      <p id="vd-desc">Шаблонное описание. Замените под свой проект.</p>
+    </div>
+
+    <!-- Сайдбар -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <span class="sidebar-title">Работы</span>
+      </div>
+
+      <div class="sidebar-list" id="sidebarList">
+
+        <div class="preview-card active" data-video="../video/VideoMont/Dragon1.mp4"
+          data-poster="photo_Project/photo_videoMont.png"
+          data-title="Как приручить Дракона"
+          data-desc="Иккинг не такой как все — он думает, а не дерётся. Ночная Фурия, которую он нашёл, изменила всё. Монтаж под атмосферу дружбы и полёта."
+          data-genre="Клип · Мультфильм"
+          data-year="2024">
+          <div class="card-thumb">
+            <img src="photo_Project/photo_videoMont.png" alt="Коммерческий ролик">
+            <span class="card-duration">1:15</span>
+          </div>
+          <div class="card-info">
+            <div class="card-name">Как приручить Дракона</div>
+            <div class="card-meta">
+              <span class="card-num">01</span>
+              <span class="card-genre">Клип</span>
+            </div>
+          </div>
+          <div class="card-active-bar"></div>
+        </div>
+
+        <div class="preview-card" data-video="../video/VideoMont/ORG2.mp4"
+          data-poster="photo_Project/photo_videoMont.png"
+          data-title="Клип для учёбы"
+          data-desc="Учебный проект — первый опыт работы с музыкальным клипом. Монтаж в ритм, цветокоррекция и базовая работа с переходами."
+          data-genre="Клип · Учебный проект"
+          data-year="2024">
+          <div class="card-thumb">
+            <img src="photo_Project/photo_videoMont.png" alt="Клип для учёбы">
+            <span class="card-duration">0:45</span>
+          </div>
+          <div class="card-info">
+            <div class="card-name">Клип для учебы</div>
+            <div class="card-meta">
+              <span class="card-num">02</span>
+              <span class="card-genre">Клип</span>
+            </div>
+          </div>
+          <div class="card-active-bar"></div>
+        </div>
+
+        <div class="preview-card" data-video="../video/VideoMont/editcar1.mp4"
+          data-poster="photo_Project/photo_videoMont.png"
+          data-title="Эдит с машиной"
+          data-desc="Атмосферный эдит под музыку. Машина, движение — монтаж выстроен под каждый удар трека."
+          data-genre="Эдит · Атмосфера"
+          data-year="2025">
+          <div class="card-thumb">
+            <img src="photo_Project/photo_videoMont.png" alt="Эдит с машиной">
+            <span class="card-duration">2:30</span>
+          </div>
+          <div class="card-info">
+            <div class="card-name">Эдит с машиной</div>
+            <div class="card-meta">
+              <span class="card-num">03</span>
+              <span class="card-genre">Эдит</span>
+            </div>
+          </div>
+          <div class="card-active-bar"></div>
+        </div>
+
+        <div class="preview-card" data-video="../video/VideoMont/Papunzel1.mp4"
+          data-poster="photo_Project/photo_videoMont.png"
+          data-title="Рапунцель"
+          data-desc="Клип по мотивам мультфильма. Мягкий монтаж, тёплая цветокоррекция и акцент на эмоциональных сценах."
+          data-genre="Клип · Анимация"
+          data-year="2024">
+          <div class="card-thumb">
+            <img src="photo_Project/photo_videoMont.png" alt="Рапунцель">
+            <span class="card-duration">0:45</span>
+          </div>
+          <div class="card-info">
+            <div class="card-name">Рапунцель</div>
+            <div class="card-meta">
+              <span class="card-num">04</span>
+              <span class="card-genre">Клип</span>
+            </div>
+          </div>
+          <div class="card-active-bar"></div>
+        </div>
+
+        <div class="preview-card" data-video="../video/VideoMont/videoMont.mp4"
+          data-poster="photo_Project/photo_videoMont.png"
+          data-title="Бойцовский клуб"
+          data-desc="Эдит по культовому фильму. Резкий монтаж, тёмная атмосфера и напряжённый ритм — всё как в первом правиле."
+          data-genre="Клип · Короткий формат"
+          data-year="2024">
+          <div class="card-thumb">
+            <img src="photo_Project/photo_videoMont.png" alt="Бойцовский клуб">
+            <span class="card-duration">0:45</span>
+          </div>
+          <div class="card-info">
+            <div class="card-name">Бойцовский клуб</div>
+            <div class="card-meta">
+              <span class="card-num">05</span>
+              <span class="card-genre">Клип</span>
+            </div>
+          </div>
+          <div class="card-active-bar"></div>
+        </div>
+
+        <div class="preview-card" data-video="../video/VideoMont/VideoMont2.mp4"
+          data-poster="photo_Project/photo_videoMont.png"
+          data-title="Доктор Хаус"
+          data-desc="Клип по сериалу. Сарказм, гений и боль — три составляющих Хауса, собранные в один ритмичный монтаж."
+          data-genre="Клип · Сериал"
+          data-year="2024">
+          <div class="card-thumb">
+            <img src="photo_Project/photo_videoMont.png" alt="Доктор Хаус">
+            <span class="card-duration">0:45</span>
+          </div>
+          <div class="card-info">
+            <div class="card-name">Доктор Хаус</div>
+            <div class="card-meta">
+              <span class="card-num">06</span>
+              <span class="card-genre">Клип</span>
+            </div>
+          </div>
+          <div class="card-active-bar"></div>
+        </div>
+
+      </div>
+    </aside>
+  </div>
+</section>
+  <!-- ------------------------_КОНЕЦ--------------------------- -->
+
+  <!-- ── О ПРОЕКТЕ ── -->
+  <section class="what" id="about">
+    <div class="what-inner">
+      <div>
+        <p class="section-label">01 — О направлении</p>
+        <h2 class="what-big">МОНТАЖ —<br>ЭТО ЯЗЫК</h2>
+        <p class="what-text">
+          Видеомонтаж — это не просто склейка кадров. Это управление ритмом, вниманием
+          и эмоцией зрителя. Каждый переход, каждый cut — осознанный выбор.<br><br>
+          <strong>Что я делаю:</strong><br>
+          Коммерческие ролики для брендов, динамичные рилсы под алгоритмы
+          соцсетей, музыкальные клипы и обучающие видео. Работаю от идеи до финального
+          экспорта — цвет, звук, графика.
+        </p>
+      </div>
+
+      <div class="what-image-wrapper">
+        <div class="image-overlay"></div>
+        <img src="photo_Project/photo_videoMont.png" alt="Video Editing" class="what-img">
+        <div class="image-corner-text">TIMELINE // 01</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── СТЕК ── -->
+  <section class="stack-section" id="stack">
+    <p class="section-label">02 — Инструменты</p>
+    <h2 class="what-big" style="margin-bottom: 56px;">ЧЕМ<br>РАБОТАЮ</h2>
+
+    <div class="stack-grid">
+
+            <div class="stack-card">
+        <span class="stack-num">01</span>
+        <div class="stack-name">DaVinci Resolve</div>
+        <div class="stack-desc">Работа с видео. Нарезка, монтаж, цветокор, финальный экспорт</div>
+        <div class="stack-tag">Основной</div>
+      </div>
+
+      <div class="stack-card">
+        <span class="stack-num">02</span>
+        <div class="stack-name">After Effects</div>
+        <div class="stack-desc">Анимация видео и фото. эффекты, цветокор</div>
+        <div class="stack-tag">Анимация</div>
+      </div>
+
+            <div class="stack-card">
+        <span class="stack-num">03</span>
+        <div class="stack-name">Premiere Pro</div>
+        <div class="stack-desc">Работа с короткими видео. Поддержка к After Effects</div>
+        <div class="stack-tag">Поддержка</div>
+      </div>
+
+      <div class="stack-card">
+        <span class="stack-num">04</span>
+        <div class="stack-name">Photoshop</div>
+        <div class="stack-desc">Подготовка фото, ретушь, текстуры и оверлеи, Обработка.</div>
+        <div class="stack-tag">Фото</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer-bar">
+    <p class="footer-copy">&copy; <span id="year"></span> KNOTU. All rights reserved.</p>
+    <p class="footer-made">Built with <span>care</span> and <span>love</span> — Prasolov Igor</p>
+  </footer>
+
+</body>
+</html>

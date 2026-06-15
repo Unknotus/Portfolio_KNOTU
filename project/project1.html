@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="KNOTU — Frontend Developer. Creating modern interfaces with clean code and motion.">
+    <title>KNOTU — Portfolio</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../styleForProject/AnimeStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../photo_Project/svg-icon/1.png" type="image/svg+xml" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="JSForProject/Project2.js" defer></script>
+
+    <body>
+
+                <!-- --------------------КНОПКА-------------– -->
+        <a href="html2.html" class="anime-back">
+            <span class="anime-back-label">SYSTEM</span>
+        
+            <div class="anime-back-row">
+                <span class="anime-back-arrow">◄</span>
+                <span class="anime-back-text">BACK TO PORTFOLIO</span>
+            </div>
+        </a>
+        
+        <!-- ----------------------------------------- -->
+
+        <!-- -------ГОЛОВА------------- -->
+        <header class="header1" id="header1">
+            <a href="#" class="logo">ANIME EDITS</a>
+            <nav>
+                <ul class="navAnime" id="navAnime">
+                    <li><a href="#about">О Видео</a></li>
+                    <li><a href="#AProjects">Проекты</a></li>
+                    <li><a href="#what">Почему?</a></li>
+                    <li><a href="contact" class="nav-cta">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span>
+            </button>
+        </header>
+        <!-- ------------------------------------------- -->
+
+
+
+
+        <!-- -----------------ГЛАВНАЯ НАДПИСЬ-------------- -->
+        <section class="hero" reveal>
+            
+            <div class="hero-ghost" aria-label="true">EDITS</div>
+            <p class="hero-label">Аниме индустрия</p>
+            <h1 class="hero-name">
+                This is <br> <em>ANIME</em><!-- тут сделать эффект с текстом ANIME -->
+            </h1>
+            <p class="hero-role"> </p> <!-- пустая строка -->
+
+            <p class="hero-sub">Тут собраны все мои проекты связанные с аниме индустрией</p>
+
+            <div class="hero-actions">
+                <a href="#AProjects" class="btn-primary">
+                    Проекты
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                        <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" /> <!-- стрелочка -->
+                    </svg>
+                </a>
+                <a href="#role" class="btn-ghost">
+                    ПРАВА
+                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+                        <path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </a>
+            </div>
+        </section>
+        <!-- ------------------------------------------------ -->
+
+
+
+<!-- --------------------------СЕКЦИЯ ПРОЕКТЫ---------------------------  -->
+<section class="project1" id="AProjects">
+    <div class="project-header">
+        <p class="section-label-AnimeInd">ПРОЕКТЫ</p>
+    </div>
+
+    <!-- Проекты(видео) -->
+    <div class="video-prosm">
+        <!-- размытие фона -->
+        <div class="AmbientBackg">
+            <video src="../video/Anime/edit1.mp4" id="ambient-video" loop muted playsinline aria-hidden="true"></video>
+        </div>
+
+        <!-- Плеер теперь лежит напрямую в сетке, как и должен -->
+        <main class="main-play-obertka">
+            <video id="main-player" controls poster="photo_Project/превью для anime edits.png">
+                <source src="../video/Anime/edit1.mp4" type="video/mp4">
+            </video>
+        </main>
+                <div class="video-description" id="videoDescription">
+                  <div class="vd-top">
+                    <div class="vd-left">
+                      <span id="vd-genre">Подборка</span>
+                      <h3 id="vd-title">MIX</h3>
+                    </div>
+                    <span id="vd-year">2023</span>
+                  </div>
+                  <p id="vd-desc">Представлена подборка аниме: <span>Jujutsu Kaisen, B2, kimetsu No Yabia, Attack on Titan, One Piece, XX, Chainsaw man, Blue Lock E.T.C.</p>
+                </div>
+
+       <aside class="sidebar">
+  <div class="sidebar-header">
+    <span class="sidebar-title">Проекты</span>
+  </div>
+
+  <div class="sidebar-list" id="sidebarList">
+
+    <div class="preview-card"
+      data-video="../video/Anime/edit1.mp4"
+      data-poster="photo_Project/превью для anime edits.png"
+      data-orientation="horizontal"
+      data-title="MIX"
+      data-desc="Представлена подборка аниме: <span>Jujutsu Kaisen, B2, kimetsu No Yabia, Attack on Titan, One Piece, XX, Chainsaw man, Blue Lock E.T.C</span>"
+      data-genre="Подборка"
+      data-year="2023">
+      <div class="card-thumb">
+        <img src="../photo_Project/превью для anime edits.png" alt="Jujutsu Kaisen">
+        <span class="card-duration">1:15</span>
+      </div>
+      <div class="card-info">
+        <div class="card-name">MIX</div>
+        <div class="card-meta">
+          <span class="card-num">01</span>
+          <span class="card-genre">Экшен</span>
+        </div>
+      </div>
+      <div class="card-active-bar"></div>
+    </div>
+
+    <div class="preview-card"
+      data-video="../video/Anime/edit2.mp4"
+      data-poster="photo_Project/превью для anime edits.png"
+      data-title="Gachiakuta"
+      data-desc="Рудо — парень с городской свалки. Когда его ложно обвиняют в убийстве, он попадает в Бездну — мир мусора и монстров. Там выживают только сильнейшие."
+      data-genre="Экшен · Выживание"
+      data-year="2024">
+      <div class="card-thumb">
+        <img src="../photo_Project/превью для anime edits.png" alt="Gachiakuta">
+        <span class="card-duration">0:30</span>
+      </div>
+      <div class="card-info">
+        <div class="card-name">Gachiakuta</div>
+        <div class="card-meta">
+          <span class="card-num">02</span>
+          <span class="card-genre">Выживание</span>
+        </div>
+      </div>
+      <div class="card-active-bar"></div>
+    </div>
+
+    <div class="preview-card"
+      data-video="../video/Anime/edit3.mp4"
+      data-poster="photo_Project/превью для anime edits.png"
+      data-title="Jujutsu Kaisen"
+      data-desc="Второй эдит по вселенной Дзюдзюцу. Акцент на битвах второго сезона — Сибуя, хаос, потери. Жёстче и темнее первого."
+      data-genre="Экшен · Тёмное фэнтези"
+      data-year="2024">
+      <div class="card-thumb">
+        <img src="../photo_Project/превью для anime edits.png" alt="Jujutsu Kaisen 2">
+        <span class="card-duration">0:30</span>
+      </div>
+      <div class="card-info">
+        <div class="card-name">Jujutsu Kaisen</div>
+        <div class="card-meta">
+          <span class="card-num">03</span>
+          <span class="card-genre">Тёмное фэнтези</span>
+        </div>
+      </div>
+      <div class="card-active-bar"></div>
+    </div>
+
+    <div class="preview-card"
+      data-video="../video/Anime/edit5.mp4"
+      data-poster="photo_Project/превью для anime edits.png"
+      data-title="Kimetsu no Yaiba"
+      data-desc="Танджиро Камадо находит свою семью убитой, а сестра превращена в демона. Он вступает в ряды охотников на демонов, чтобы вернуть ей человеческий облик."
+      data-genre="Экшен · Драма"
+      data-year="2024">
+      <div class="card-thumb">
+        <img src="../photo_Project/превью для anime edits.png" alt="Kimetsu no Yaiba">
+        <span class="card-duration">0:30</span>
+      </div>
+      <div class="card-info">
+        <div class="card-name">Kimetsu no Yaiba</div>
+        <div class="card-meta">
+          <span class="card-num">04</span>
+          <span class="card-genre">Сёнен</span>
+        </div>
+      </div>
+      <div class="card-active-bar"></div>
+    </div>
+
+    <div class="preview-card"
+      data-video="../video/Anime/Hostle.mp4"
+      data-poster="photo_Project/превью для anime edits.png"
+      data-title="Howl's Moving Castle"
+      data-desc="Молодая шляпница Софи попадает под заклятие и превращается в старуху. Её путь к спасению лежит через летающий замок таинственного волшебника Хоула."
+      data-genre="Фэнтези · Романтика"
+      data-year="2024">
+      <div class="card-thumb">
+        <img src="../photo_Project/превью для anime edits.png" alt="Howl's Moving Castle">
+        <span class="card-duration">0:30</span>
+      </div>
+      <div class="card-info">
+        <div class="card-name">Howl's Moving Castle</div>
+        <div class="card-meta">
+          <span class="card-num">05</span>
+          <span class="card-genre">Фэнтези</span>
+        </div>
+      </div>
+      <div class="card-active-bar"></div>
+    </div>
+
+    <div class="preview-card"
+      data-video="../video/Anime/JujutsuK2.mp4"
+      data-poster="photo_Project/превью для anime edits.png"
+      data-title="Jujutsu Kaisen"
+      data-desc="Третий эдит по вселенной. Финальная арка — хаос нарастает, проклятия сильнее. Монтаж под агрессивный саунд."
+      data-genre="Экшен · Темное Фэнтези"
+      data-year="2025">
+      <div class="card-thumb">
+        <img src="../photo_Project/превью для anime edits.png" alt="Jujutsu Kaisen 3">
+        <span class="card-duration">0:30</span>
+      </div>
+      <div class="card-info">
+        <div class="card-name">Jujutsu Kaisen</div>
+        <div class="card-meta">
+          <span class="card-num">06</span>
+          <span class="card-genre">Темное Фэнтези</span>
+        </div>
+      </div>
+      <div class="card-active-bar"></div>
+    </div>
+
+    <div class="preview-card"
+      data-video="../video/Anime/KimetsyNo1.mp4"
+      data-poster="photo_Project/превью для anime edits.png"
+      data-title="Kimetsu no Yaiba"
+      data-desc="Второй эдит по Клинку. Арка Тренировочного лагеря — скорость, кровь и первые настоящие потери отряда."
+      data-genre="Экшен · Сёнэн"
+      data-year="2025">
+      <div class="card-thumb">
+        <img src="../photo_Project/превью для anime edits.png" alt="Kimetsu no Yaiba 2">
+        <span class="card-duration">0:30</span>
+      </div>
+      <div class="card-info">
+        <div class="card-name">Kimetsu no Yaiba</div>
+        <div class="card-meta">
+          <span class="card-num">07</span>
+          <span class="card-genre">Сёнэн</span>
+        </div>
+      </div>
+      <div class="card-active-bar"></div>
+    </div>
+
+    <div class="preview-card"
+      data-video="../video/Anime/Mix.mp4"
+      data-poster="photo_Project/превью для anime edits.png"
+      data-title="MIX"
+      data-desc="Сборный эдит из разных тайтлов. Единая музыка склеивает сцены из разных вселенных в один непрерывный поток."
+      data-genre="Mix · AMV"
+      data-year="2025">
+      <div class="card-thumb">
+        <img src="../photo_Project/превью для anime edits.png" alt="MIX">
+        <span class="card-duration">0:30</span>
+      </div>
+      <div class="card-info">
+        <div class="card-name">MIX</div>
+        <div class="card-meta">
+          <span class="card-num">08</span>
+          <span class="card-genre">Mix</span>
+        </div>
+      </div>
+      <div class="card-active-bar"></div>
+    </div>
+
+    <div class="preview-card"
+      data-video="../video/Anime/mix2.mp4"
+      data-poster="photo_Project/превью для anime edits.png"
+      data-title="MIX Vol.2"
+      data-desc="Продолжение сборного эдита. Больше тайтлов, плотнее монтаж, интенсивнее саунд."
+      data-genre="Mix · AMV"
+      data-year="2025">
+      <div class="card-thumb">
+        <img src="../photo_Project/превью для anime edits.png" alt="MIX 2">
+        <span class="card-duration">0:30</span>
+      </div>
+      <div class="card-info">
+        <div class="card-name">MIX Vol.2</div>
+        <div class="card-meta">
+          <span class="card-num">9</span>
+          <span class="card-genre">Mix</span>
+        </div>
+      </div>
+      <div class="card-active-bar"></div>
+    </div>
+
+    <div class="preview-card"
+      data-video="../video/Anime/Xori.mp4"
+      data-poster="photo_Project/превью для anime edits.png"
+      data-title="Horimiya"
+      data-desc="Хори — отличница и домохозяйка дома. Миямура — тихоня в школе и татуированный парень снаружи. Они случайно узнают тайны друг друга."
+      data-genre="Романтика · Повседневность"
+      data-year="2025">
+      <div class="card-thumb">
+        <img src="../photo_Project/превью для anime edits.png" alt="Horimiya">
+        <span class="card-duration">0:30</span>
+      </div>
+      <div class="card-info">
+        <div class="card-name">Horimiya</div>
+        <div class="card-meta">
+          <span class="card-num">11</span>
+          <span class="card-genre">Романтика</span>
+        </div>
+      </div>
+      <div class="card-active-bar"></div>
+    </div>
+
+  </div>
+</aside>
+    </div>
+</section>
+        <!-- ----------------------------------------------------------------- -->
+
+
+
+
+
+        <!-- ---------------------------СЕКЦИЯ ПОЧЕМУ-------------------------- -->
+        <section class="what" id="what">
+            <div class="what-inner">
+                <p class="section-label ">01 - Почему именно это</p> <!-- добавить reveal -->
+                <h2 class="what-big">АНИМЕ - ДЛЯ КОГО?</h2>
+                <p class="what-text">
+                        Аниме давно переросло рамки «просто мультиков для детей». Сегодня это мощнейший
+                        инструмент визуальной культуры, где стираются границы между реальностью и чистой фантазией.
+                        Это кино, которое не ограничено бюджетом на декорации или законами физики — здесь всё
+                        подчинено только воображению автора.<br><br>
+                        <strong>Для кого это?</strong><br>
+                        Для тех, кто ищет сложную драматургию, нестандартные визуальные приёмы,
+                        безумную динамику и искренние эмоции, которые редко встретишь в привычном
+                        кинематографе. Это манифест свободы самовыражения, запечатанный в кадры.
+                    </p>
+
+                                    <div class="what-image-wrapper">
+                    <div class="image-overlay"></div>
+                    <img src="../photo_Project/превью для anime edits.png" alt="Anime Visual Frame" class="what-img">
+                    <div class="image-corner-text">FRAME // 01</div> <!-- Небольшой тех-маркер снизу -->
+                </div>
+            </div>
+                <!-- --------------------КНОПКА-------------– -->
+
+
+        
+        <!-- ----------------------------------------- -->
+        </section>
+
+        
+
+
+
+
+
+        <!-- ------------------------------------------------------------ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--------------------------- ХВОСТ ------------------ -->
+        <footer class="footer-bar">
+            <p class="footer-copy">&copy; <span id="year"></span> KNOTU. All rights reserved.</p>
+            <p class="footer-made">Built with <span>care</span> and <span>love</span> — Prasolov Igor</p>
+        </footer>
+        <!-- ------------------------------------------- -->
+
+    </body>
+
+</html>

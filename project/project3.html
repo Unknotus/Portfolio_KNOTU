@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="KNOTU — Фриланс. Лендинги, вёрстка, Figma.">
+  <title>KNOTU — Фриланс</title>
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../styleForProject/styleForFreelans.css">
+  <link rel="stylesheet" href="../styleForProject/AnimeStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <script src="JSForProject/Project3.js" defer></script>
+</head>
+
+<body>
+
+  <!-- ── КНОПКА НАЗАД ── -->
+  <a href="html2.html" class="anime-back">
+    <span class="anime-back-label">SYSTEM</span>
+    <div class="anime-back-row">
+      <span class="anime-back-arrow">◄</span>
+      <span class="anime-back-text">BACK TO PORTFOLIO</span>
+    </div>
+  </a>
+
+  <!-- ── HEADER ── -->
+  <header class="header1" id="header1">
+    <a href="#" class="logo">FREELANCE</a>
+    <nav>
+      <ul class="navAnime" id="navAnime">
+        <li><a href="#about">О Направлении</a></li>
+        <li><a href="#works">Работы</a></li>
+        <li><a href="#stack">Стек</a></li>
+        <li><a href="contact" class="nav-cta">Контакты</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-ghost" aria-hidden="true">WEB</div>
+    <p class="hero-label">Коммерческая вёрстка</p>
+    <h1 class="hero-name">
+      This is <br><em>FREELANCE</em>
+    </h1>
+    <p class="hero-sub">
+      Лендинги, интерфейсы и вёрстка под ключ.<br>
+      От Figma до деплоя.
+    </p>
+    <div class="hero-actions">
+      <a href="#works" class="btn-primary">
+        Работы
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+      <a href="#stack" class="btn-ghost">
+        Стек
+        <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
+          <path d="M1 5h12M8 1l5 4-5 4" stroke="currentColor" stroke-width="1.4"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ── О НАПРАВЛЕНИИ ── -->
+  <section class="what" id="about">
+    <div class="what-inner">
+      <div>
+        <p class="section-label">01 — О направлении</p>
+        <h2 class="what-big">ФРИЛАНС —<br>ЭТО РЕЗУЛЬТАТ</h2>
+        <p class="what-text">
+          Фриланс научил главному: заказчику не важен твой стек —
+          важно чтобы работало, выглядело и продавало.<br><br>
+          <strong>Что я делаю:</strong><br>
+          Верстаю лендинги по макетам из Figma, пишу чистый
+          семантический HTML/CSS, добавляю анимации и сдаю
+          в срок. Работал с небольшими бизнесами, портфолио
+          и стартапами.
+        </p>
+      </div>
+
+      <div class="what-image-wrapper">
+        <div class="image-overlay"></div>
+        <img src="photo_Project/photo_Free.png" alt="Freelance" class="what-img">
+        <div class="image-corner-text">BUILD // 01</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── РАБОТЫ ── -->
+  <section class="works-section" id="works">
+    <div class="works-header">
+      <p class="section-label">02 — Работы</p>
+      <h2 class="section-title">Выполненные<br>заказы</h2>
+    </div>
+
+    <div class="works-list">
+
+      <div class="work-row">
+        <span class="work-num">01</span>
+        <div class="work-info">
+          <div class="work-title">Лендинг для бизнеса</div>
+          <div class="work-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JS</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+        <div class="work-status work-status--done">Сдан</div>
+      </div>
+
+      <div class="work-row">
+        <span class="work-num">02</span>
+        <div class="work-info">
+          <div class="work-title">Портфолио под ключ</div>
+          <div class="work-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Animations</span>
+          </div>
+        </div>
+        <div class="work-status work-status--done">Сдан</div>
+      </div>
+
+      <div class="work-row">
+        <span class="work-num">03</span>
+        <div class="work-info">
+          <div class="work-title">UI-компоненты / CodePen</div>
+          <div class="work-tags">
+            <span class="tag">CSS</span>
+            <span class="tag">JS</span>
+            <span class="tag">CodePen</span>
+          </div>
+        </div>
+        <div class="work-status work-status--done">Опубликовано</div>
+      </div>
+
+      <div class="work-row">
+        <span class="work-num">04</span>
+        <div class="work-info">
+          <div class="work-title">Редизайн существующего сайта</div>
+          <div class="work-tags">
+            <span class="tag">Figma</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+        </div>
+        <div class="work-status work-status--done">Сдан</div>
+      </div>
+
+      <div class="work-row work-row--soon">
+        <span class="work-num">05</span>
+        <div class="work-info">
+          <div class="work-title">Следующий проект</div>
+          <div class="work-tags">
+            <span class="tag">—</span>
+          </div>
+        </div>
+        <div class="work-status work-status--soon">Открыт</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── СТЕК ── -->
+  <section class="stack-section" id="stack">
+    <p class="section-label">03 — Инструменты</p>
+    <h2 class="what-big" style="margin-bottom: 56px;">ЧЕМ<br>РАБОТАЮ</h2>
+
+    <div class="stack-grid">
+
+      <div class="stack-card">
+        <span class="stack-num">01</span>
+        <div class="stack-name">HTML5 / CSS3</div>
+        <div class="stack-desc">
+          Семантическая вёрстка, Flexbox, Grid, анимации.
+          Адаптив от 320px без фреймворков.
+        </div>
+        <div class="stack-tag">Основа</div>
+      </div>
+
+      <div class="stack-card">
+        <span class="stack-num">02</span>
+        <div class="stack-name">JavaScript</div>
+        <div class="stack-desc">
+          Интерактивность, анимации на скролл,
+          работа с DOM и формами. Без jQuery.
+        </div>
+        <div class="stack-tag">Логика</div>
+      </div>
+
+      <div class="stack-card">
+        <span class="stack-num">03</span>
+        <div class="stack-name">Figma</div>
+        <div class="stack-desc">
+          Читаю любые макеты, работаю
+          с компонентами, авто-лейаутами
+          и прототипами.
+        </div>
+        <div class="stack-tag">Дизайн</div>
+      </div>
+
+      <div class="stack-card">
+        <span class="stack-num">04</span>
+        <div class="stack-name">Git / GitHub</div>
+        <div class="stack-desc">
+          Версионирование, ветки, pull request.
+          Весь код в репозитории — чисто и прозрачно.
+        </div>
+        <div class="stack-tag">Контроль</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="cta-section">
+    <div class="cta-inner">
+      <p class="section-label">04 — Сотрудничество</p>
+      <h2 class="cta-title">Есть задача?<br><em>Обсудим.</em></h2>
+      <p class="cta-sub">
+        Открыт к новым заказам.<br>
+        Пишите — отвечу быстро.
+      </p>
+      <a href="html2.html#contact" class="btn-primary">
+        Написать
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+    <div class="cta-ghost" aria-hidden="true">HIRE</div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer-bar">
+    <p class="footer-copy">&copy; <span id="year"></span> KNOTU. All rights reserved.</p>
+    <p class="footer-made">Built with <span>care</span> and <span>love</span> — Prasolov Igor</p>
+  </footer>
+
+</body>
+</html>

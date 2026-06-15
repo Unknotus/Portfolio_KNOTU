@@ -1,0 +1,358 @@
+/* ── Study Projects Section ── */
+.study-projects {
+  border-top: 1px solid var(--line);
+  padding: 120px 6%;
+}
+
+.study-projects-header {
+  margin-bottom: 64px;
+}
+
+.study-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ── Card ── */
+.study-card {
+  background: var(--bg);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: background 0.25s;
+}
+
+.study-card:hover {
+  background: var(--card);
+}
+
+.study-card--soon {
+  opacity: 0.75;
+}
+
+.study-card--empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  opacity: 0.3;
+}
+
+.study-empty-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── Card Head ── */
+.study-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.study-card-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.study-card-num {
+  font-family: var(--f-display);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.study-card-type {
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+.study-card-type--web {
+  color: #60a5fa;
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  background: rgba(96, 165, 250, 0.06);
+}
+
+.study-card-type--cpp {
+  color: #f97316;
+  border: 1px solid rgba(249, 115, 22, 0.25);
+  background: rgba(249, 115, 22, 0.06);
+}
+
+/* ── Status badges ── */
+.study-card-status {
+  font-size: 0.6rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+.study-card-status--done {
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.25);
+  background: rgba(74, 222, 128, 0.05);
+}
+
+.study-card-status--soon {
+  color: var(--accent);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  background: rgba(139, 92, 246, 0.06);
+}
+
+/* ── Card Text ── */
+.study-card-title {
+  font-family: var(--f-display);
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.study-card-desc {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.study-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ── Preview (iframe / terminal) ── */
+.study-card-preview {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #0a0a0a;
+  position: relative;
+}
+
+.study-card-preview-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 14px;
+  background: #111;
+  border-bottom: 1px solid var(--line);
+}
+
+.preview-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--line);
+  flex-shrink: 0;
+}
+
+.preview-dot:nth-child(1) { background: #ff5f57; }
+.preview-dot:nth-child(2) { background: #febc2e; }
+.preview-dot:nth-child(3) { background: #28c840; }
+
+.preview-url {
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-left: 8px;
+  flex: 1;
+  text-align: center;
+}
+
+.preview-open {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.preview-open:hover { opacity: 0.7; }
+
+/* iframe */
+.study-card-iframe {
+  width: 100%;
+  height: 320px;
+  border: none;
+  display: block;
+  transform-origin: top left;
+}
+
+/* Заглушка пока нет ссылки */
+.iframe-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 320px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+}
+
+.iframe-placeholder-icon {
+  font-size: 2rem;
+  opacity: 0.3;
+}
+
+/* Terminal preview */
+.study-card-preview--terminal .terminal-output {
+  padding: 20px 20px 24px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  min-height: 160px;
+}
+
+.terminal-line {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal-prompt {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.terminal-cmd {
+  color: #e2e8f0;
+}
+
+.terminal-line--comment {
+  color: #4ade80;
+  margin-top: 4px;
+}
+
+.terminal-line--muted {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-style: italic;
+}
+
+/* ── Card Footer ── */
+.study-card-footer {
+  display: flex;
+  gap: 24px;
+  margin-top: auto;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
+}
+
+.study-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--f-display);
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.study-link .arrow {
+  color: var(--accent);
+  transition: transform 0.2s;
+}
+
+.study-link:hover {
+  color: var(--text);
+}
+
+.study-link:hover .arrow {
+  transform: translateX(3px);
+}
+
+.study-link--disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ── Stack (переиспользуем из FreelanceStyle) ── */
+.stack-section {
+  border-top: 1px solid var(--line);
+  padding: 120px 6%;
+}
+
+.stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.stack-card {
+  background: var(--bg);
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: background 0.25s;
+}
+
+.stack-card:hover { background: var(--card); }
+
+.stack-num {
+  font-family: var(--f-display);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.stack-name {
+  font-family: var(--f-display);
+  font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.stack-desc {
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.65;
+  max-width: 340px;
+}
+
+.stack-tag {
+  margin-top: auto;
+  align-self: flex-start;
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: 999px;
+  padding: 4px 12px;
+}
+
+/* АДАПТИВ */
