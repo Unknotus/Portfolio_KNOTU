@@ -99,10 +99,14 @@
 
         <!-- Плеер теперь лежит напрямую в сетке, как и должен -->
         <main class="main-play-obertka">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/8BUm-IR76JM?si=1GaRoO8bREwCnGT7"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="video-wrapper"
+            onclick="this.innerHTML = `<iframe src='https://www.youtube.com/embed/VIDEO_ID?autoplay=1' allow='autoplay; fullscreen' allowfullscreen style='width:100%; aspect-ratio:16/9; border:none; border-radius:12px;'></iframe>`">
+            <img src="preview.jpg" alt="Название"
+              style="width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:12px; cursor:pointer;">
+            <div
+              style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); font-size:48px; color:#fff; background:rgba(0,0,0,0.6); width:70px; height:70px; border-radius:50%; display:flex; align-items:center; justify-content:center;">
+              ▶</div>
+          </div>
         </main>
                 <div class="video-description" id="videoDescription">
                   <div class="vd-top">
