@@ -16,17 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
 function checkOrientation(card) {
     if (card && card.dataset.orientation === 'horizontal') {
       playerWrap.classList.remove('is-vertical');
-      ambientBackg.classList.remove('ambient-vertical'); // добавь
+      ambientBackg.classList.remove('ambient-vertical');
       return;
     }
     if (card && card.dataset.orientation === 'vertical') {
       playerWrap.classList.add('is-vertical');
-      ambientBackg.classList.add('ambient-vertical'); // добавь
-      return;
+      ambientBackg.classList.add('ambient-vertical'); 
     }
     const isVertical = mainPlayer.videoHeight > mainPlayer.videoWidth;
     playerWrap.classList.toggle('is-vertical', isVertical);
-    ambientBackg.classList.toggle('ambient-vertical', isVertical); // добавь
+    ambientBackg.classList.toggle('ambient-vertical', isVertical);
   }
 
   // ── Описание под плеером ──
