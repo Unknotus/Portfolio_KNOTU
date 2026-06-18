@@ -53,9 +53,9 @@ function checkOrientation(card) {
       previewCards.forEach(c => c.classList.remove('active'));
       card.classList.add('active');
 
-      mainPlayer.src    = card.dataset.video;
+      mainPlayer.iframe    = card.dataset.video;
       mainPlayer.poster = card.dataset.poster;
-      ambientVideo.src  = card.dataset.video;
+      ambientVideo.iframe  = card.dataset.video;
 
       mainPlayer.addEventListener('loadedmetadata', () => checkOrientation(card), { once: true });
       mainPlayer.play();
