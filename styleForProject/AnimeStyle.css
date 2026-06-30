@@ -562,8 +562,8 @@ overflow-x: hidden;
 .what-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Картинка идеально заполнит блок, не деформируясь */
-  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  object-fit: contain;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* плавное появление  */
   border-radius:30px;
 }
 
