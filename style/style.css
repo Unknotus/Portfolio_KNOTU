@@ -137,7 +137,7 @@
       pointer-events: none;
     }
 
-    /* Big ghost bg text */
+    /* текст на заднем фоне */
     .hero-ghost {
       position: absolute;
       bottom: -4vw;
